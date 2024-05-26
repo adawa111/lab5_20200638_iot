@@ -30,11 +30,22 @@ android {
 
 dependencies {
 
-    implementation libs.appcompat
+    /*implementation libs.appcompat
     implementation libs.material
     implementation libs.activity
     implementation libs.constraintlayout
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
-    androidTestImplementation libs.espresso.core
+    androidTestImplementation libs.espresso.core*/
+
+    implementation libs.appcompat.v131
+    implementation libs.material
+    implementation libs.activity.v123
+    implementation libs.constraintlayout.v204
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core.v340
+
+    implementation "androidx.room:room-runtime:2.2.5"
+    annotationProcessor "androidx.room:room-compiler:2.2.5"
 }
