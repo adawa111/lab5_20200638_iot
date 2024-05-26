@@ -123,7 +123,7 @@ public class AgregarTarea extends AppCompatActivity {
             task.setCodigo(codigopucp);
 
             taskRepository.insertarTask(new Task[]{task});
-            setNotification(task);
+            //setNotification(task);
             finish(); // Close activity after saving task
         } else {
             showToast("Ocurrió un error al guardar la tarea y el recordatorio");
