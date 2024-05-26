@@ -124,7 +124,7 @@ public class AgregarTarea extends AppCompatActivity {
 
             taskRepository.insertarTask(new Task[]{task});
             //setNotification(task);
-            finish(); // Close activity after saving task
+            finish();
         } else {
             showToast("Ocurrió un error al guardar la tarea y el recordatorio");
         }
